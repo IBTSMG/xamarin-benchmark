@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Demo.MyImagePage"
+		Title="Image">
+	<Grid Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+		<Grid.RowDefinitions>
+	    <RowDefinition Height="Auto" />
+	    <RowDefinition Height="Auto" />
+	  </Grid.RowDefinitions>
+	  <Grid.ColumnDefinitions>
+	    <ColumnDefinition Width="Auto" />
+	    <ColumnDefinition Width="*" />
+	  </Grid.ColumnDefinitions>
+
+	  <Label Text="Ödül" Grid.Column="0" Grid.Row="0"></Label>
+	  <Picker x:Name="pckPrize" SelectedIndexChanged="onPrizeChange" Grid.Column="1" Grid.Row="0">
+      </Picker>
+
+	  <Image x:Name="imgPrize" Grid.Column="1" Grid.Row="1"/>
+	</Grid>
+</ContentPage>

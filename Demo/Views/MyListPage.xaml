@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Demo.MyListPage"
+		Title="ListView">
+	<StackLayout Padding="5,10,5,5">
+		<Grid>
+			<Grid.ColumnDefinitions>
+		    	<ColumnDefinition Width="*" />
+		    	<ColumnDefinition Width="2*" />
+		  	</Grid.ColumnDefinitions>
+			<Entry Text="{Binding IterationCount}" Grid.Column="0" HorizontalTextAlignment="End"></Entry>
+			<Button Text="Load" Command="{Binding LoadCommand}" Grid.Column="1" HorizontalOptions="Start"></Button>
+		</Grid>
+		<Label Text="Sipariş Listesi" FontAttributes="Bold" HorizontalOptions="Center" />
+		<ListView ItemsSource="{Binding Orders}" Margin="0,10,0,0">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="1*" />
+								<ColumnDefinition Width="3*" />
+								<ColumnDefinition Width="2*" />
+								<ColumnDefinition Width="2*" />
+								<ColumnDefinition Width="3*" />
+							</Grid.ColumnDefinitions>
+							<Label Text="{Binding Id}"/>
+							<Label Grid.Column="1" Text="{Binding Account}" />
+							<Label Grid.Column="2" Text="{Binding Item}" />
+							<Label Grid.Column="3" Text="{Binding Price}" />
+							<Label Grid.Column="4" Text="{Binding OrderDate, StringFormat='{}{0:dd.MM.yyyy}'}" />
+						</Grid>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
+</ContentPage>

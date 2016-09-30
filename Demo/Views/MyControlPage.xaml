@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Demo.MyControlPage"
+		Title="Controls">
+	<Grid Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+		<Grid.RowDefinitions>
+	    <RowDefinition Height="Auto" />
+	    <RowDefinition Height="Auto" />
+	    <RowDefinition Height="Auto" />
+	    <RowDefinition Height="Auto" />
+	    <RowDefinition Height="Auto" />
+	    <RowDefinition Height="Auto" />
+	    <RowDefinition Height="Auto" />
+	  </Grid.RowDefinitions>
+	  <Grid.ColumnDefinitions>
+	    <ColumnDefinition Width="Auto" />
+	    <ColumnDefinition Width="*" />
+	  </Grid.ColumnDefinitions>
+		
+	  <Label Text="Ad-Soyad" Grid.Column="0" Grid.Row="0"></Label>
+      <Entry Grid.Column="1" Grid.Row="0"></Entry>
+
+	  <Label Text="Doğum Tarihi" Grid.Column="0" Grid.Row="1"></Label>
+	  <DatePicker Grid.Column="1" Grid.Row="1" Format="dd.MM.yyyy"></DatePicker>
+
+	  <Label Text="Meslek" Grid.Column="0" Grid.Row="2"></Label>
+	  <Picker Grid.Column="1" Grid.Row="2">
+	  	<Picker.Items>
+            <x:String>Avukat</x:String>
+            <x:String>Diş Hekimi</x:String> 
+            <x:String>Doktor</x:String> 
+            <x:String>Mühendis</x:String> 
+            <x:String>Serbest</x:String>
+        </Picker.Items>
+      </Picker>
+
+	  <Label Text="Cinsiyet" Grid.Column="0" Grid.Row="3"></Label>
+	  <Picker Grid.Column="1" Grid.Row="3">
+	  	<Picker.Items>
+            <x:String>Erkek</x:String>
+            <x:String>Kadın</x:String> 
+        </Picker.Items>
+      </Picker>
+
+	  <Label Text="Aktif mi?" Grid.Column="0" Grid.Row="4"></Label>
+	  <Switch IsToggled="true" Grid.Column="1" Grid.Row="4"></Switch>
+
+	  <Label Text="Yaş" Grid.Column="0" Grid.Row="5"></Label>
+	  <StackLayout Grid.Column="1" Grid.Row="5" Orientation="Horizontal">
+	  	<Stepper x:Name="stpAge" Maximum="65" Minimum="18" Value="25"></Stepper>
+		<Label BindingContext="{x:Reference Name=stpAge}" Text="{Binding Value}"></Label>
+	  </StackLayout>
+
+	  <Label Text="Borç" Grid.Column="0" Grid.Row="6"></Label>
+	  <StackLayout Grid.Column="1" Grid.Row="6" Orientation="Horizontal">
+	  	<Slider x:Name="sldDebt" Maximum="1000" Minimum="0" Value="0"></Slider>
+		<Label BindingContext="{x:Reference Name=sldDebt}" Text="{Binding Value}"></Label>
+	  </StackLayout>
+		
+	  <Label Text="Yorum" Grid.Column="0" Grid.Row="7"></Label>
+	  <Editor Grid.Column="1" Grid.Row="7"></Editor>
+
+	</Grid>
+</ContentPage>

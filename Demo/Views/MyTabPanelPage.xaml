@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Demo.MyTabPanelPage"
+		Title="TabPanel">
+	<TabbedPage.Children>
+		<ContentPage Title="Red">
+		    <StackLayout>
+		        <Label Text="Red" FontSize="Medium" HorizontalOptions="Center" />
+		        <BoxView Color="Red" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+		    </StackLayout>
+		</ContentPage>
+		<ContentPage Title="Blue">
+		    <StackLayout>
+		        <Label Text="Blue" FontSize="Medium" HorizontalOptions="Center" />
+		        <BoxView Color="Blue" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+		    </StackLayout>
+		</ContentPage>
+		<ContentPage Title="Yellow">
+		    <StackLayout>
+		        <Label Text="Yellow" FontSize="Medium" HorizontalOptions="Center" />
+		        <BoxView Color="Yellow" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+		    </StackLayout>
+		</ContentPage>
+	</TabbedPage.Children>
+</TabbedPage>
