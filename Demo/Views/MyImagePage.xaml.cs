@@ -10,7 +10,8 @@ namespace Demo
 		public Dictionary<string, string> images = new Dictionary<string, string>()
 		{
 			{"Monkey","monkey.jpg"},
-			{"WaterFront","waterfront.jpg"}
+			{"WaterFront","waterfront.jpg"},
+			{"Xamarin","tapped.jpg"}
 		};
 
 		public MyImagePage()
@@ -19,6 +20,7 @@ namespace Demo
 
 			pckPrize.Items.Add("Monkey");
 			pckPrize.Items.Add("WaterFront");
+			pckPrize.Items.Add("Xamarin");
 		}
 
 	    void onPrizeChange(object sender, EventArgs eventArgs)

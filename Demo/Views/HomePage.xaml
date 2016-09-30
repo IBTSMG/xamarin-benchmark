@@ -2,18 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		x:Class="Demo.HomePage"
 		Title="Ibtech Demo">
-	<Grid Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-	  <Grid.RowDefinitions>
-	    <RowDefinition Height="Auto" />
-	    <RowDefinition Height="Auto" />
-	  </Grid.RowDefinitions>
-	  <Grid.ColumnDefinitions>
-	    <ColumnDefinition Width="Auto" />
-	    <ColumnDefinition Width="*" />
-	  </Grid.ColumnDefinitions>
-	  <Label Text="Name" Grid.Row="0" Grid.Column="0" />
-	  <Entry Text="{Binding Name}" Grid.Row="0" Grid.Column="1" />
-	  <Label Text="Surname" Grid.Row="1" Grid.Column="0" />
-	  <Entry Text="{Binding Surname}" Grid.Row="1" Grid.Column="1" />
-	</Grid>
+	<StackLayout Padding="20" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+		<Grid HorizontalOptions="FillAndExpand">
+		  <Grid.RowDefinitions>
+		    <RowDefinition Height="Auto" />
+		    <RowDefinition Height="Auto" />
+		  </Grid.RowDefinitions>
+		  <Grid.ColumnDefinitions>
+		    <ColumnDefinition Width="Auto" />
+		    <ColumnDefinition Width="*" />
+		  </Grid.ColumnDefinitions>
+		  <Label Text="Name" Grid.Row="0" Grid.Column="0" />
+		  <Entry Text="{Binding Name}" Grid.Row="0" Grid.Column="1" />
+		  <Label Text="Surname" Grid.Row="1" Grid.Column="0" />
+		  <Entry Text="{Binding Surname}" Grid.Row="1" Grid.Column="1" />
+		</Grid>
+		<Button Text="Show" Clicked="Show"/>
+	</StackLayout>
 </ContentPage>

@@ -1,12 +1,11 @@
 ﻿using System;
+using System.Windows.Input;
+using Xamarin.Forms;
+
 namespace Demo
 {
 	public class HomeViewModel : BaseViewModel
 	{
-		public HomeViewModel()
-		{
-		}
-
 		private string name;
 		public string Name
 		{ 

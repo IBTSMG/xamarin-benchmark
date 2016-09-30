@@ -113,6 +113,8 @@
     <AndroidResource Include="Resources\drawable\hamburger.png" />
     <AndroidResource Include="Resources\drawable\monkey.jpg" />
     <AndroidResource Include="Resources\drawable\waterfront.jpg" />
+    <AndroidResource Include="Resources\drawable\tapped_bw.jpg" />
+    <AndroidResource Include="Resources\drawable\tapped.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

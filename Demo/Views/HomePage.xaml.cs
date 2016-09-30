@@ -12,5 +12,11 @@ namespace Demo
 			InitializeComponent();
 			this.BindingContext = new HomeViewModel();
 		}
+
+		void Show(object sender, EventArgs e)
+		{
+			HomeViewModel model = this.BindingContext as HomeViewModel;
+			DisplayAlert("Alert", string.Format("Hoşgeldin {0} {1}", model.Name, model.Surname), "OK");
+		}
 	}
 }

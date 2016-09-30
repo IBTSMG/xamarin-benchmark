@@ -2,6 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		x:Class="Demo.MyScrollPage"
 		Title="Scroll">
-	<ContentPage.Content>
-	</ContentPage.Content>
+	<StackLayout Padding="10" Orientation="Vertical" VerticalOptions="FillAndExpand">
+		<Label Text="Finansbank Giriş"  FontAttributes="Bold" HorizontalOptions="Center" />
+		<ScrollView Orientation="Vertical" Padding="10" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+				<Image Source="monkey.jpg" />
+				<Image Source="waterfront.jpg" />
+				<Image Source="tapped.jpg" />
+				<Image Source="tapped_bw.jpg" />
+			</StackLayout>
+		</ScrollView>
+		<Button Text="Login" />
+	</StackLayout>
 </ContentPage>
