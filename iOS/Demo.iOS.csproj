@@ -114,6 +114,39 @@
     <Reference Include="Xamarin.Forms.Maps.iOS">
       <HintPath>..\packages\Xamarin.Forms.Maps.2.3.2.127\lib\Xamarin.iOS10\Xamarin.Forms.Maps.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.Xamarin.iOS">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Chart">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.ChartRenderer.iOS">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.ChartRenderer.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Common">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Common.iOS">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.Common.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.DataControls">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.DataControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.DataControlsRenderer.iOS">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.DataControlsRenderer.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Input">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.InputRenderer.iOS">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.InputRenderer.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Primitives">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.PrimitivesRenderer.iOS">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.3.930.1\lib\xamarinios10\Telerik.XamarinForms.PrimitivesRenderer.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Demo\Demo.csproj">
@@ -143,8 +176,8 @@
   <ItemGroup>
     <BundleResource Include="Resources\contacts%402x.png" />
     <BundleResource Include="Resources\contacts.png" />
-    <BundleResource Include="Resources\hamburger%402x.png" />
-    <BundleResource Include="Resources\hamburger.png" />
+    <BundleResource Include="Resources\menu_hamburger%402x.png" />
+    <BundleResource Include="Resources\menu_hamburger.png" />
     <BundleResource Include="Resources\monkey.jpg" />
     <BundleResource Include="Resources\waterfront.jpg" />
     <BundleResource Include="Resources\tapped_bw.jpg" />
