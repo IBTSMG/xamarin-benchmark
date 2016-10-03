@@ -7,8 +7,39 @@
 	        <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
 	    </ContentPage.Padding>
 	    <StackLayout>
-	        <Label Text="Red" FontSize="Medium" HorizontalOptions="Center" />
-	        <BoxView Color="Red" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+	        <Label Text="Red" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" />
+
+	        <Grid Padding="20">
+			  <Label Text="Ad-Soyad" Grid.Column="0" Grid.Row="0"></Label>
+		      <Entry Grid.Column="1" Grid.Row="0"></Entry>
+
+			  <Label Text="Doğum Tarihi" Grid.Column="0" Grid.Row="1"></Label>
+			  <DatePicker Grid.Column="1" Grid.Row="1" Format="dd.MM.yyyy"></DatePicker>
+
+			  <Label Text="Meslek" Grid.Column="0" Grid.Row="2"></Label>
+			  <Picker Grid.Column="1" Grid.Row="2">
+			  	<Picker.Items>
+		            <x:String>Avukat</x:String>
+		            <x:String>Diş Hekimi</x:String> 
+		            <x:String>Doktor</x:String> 
+		            <x:String>Mühendis</x:String> 
+		            <x:String>Serbest</x:String>
+		        </Picker.Items>
+		      </Picker>
+			  <Label Text="Cinsiyet" Grid.Column="0" Grid.Row="3"></Label>
+			  <Picker Grid.Column="1" Grid.Row="3">
+			  	<Picker.Items>
+		            <x:String>Erkek</x:String>
+		            <x:String>Kadın</x:String> 
+		        </Picker.Items>
+		      </Picker>
+
+			  <Label Text="Aktif mi?" Grid.Column="0" Grid.Row="4"></Label>
+			  <Switch IsToggled="true" Grid.Column="1" Grid.Row="4"></Switch>
+
+			</Grid>
+			
+	        <BoxView Color="Red" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" />
 	    </StackLayout>
 	</ContentPage>
 	<ContentPage>
@@ -16,8 +47,40 @@
 	        <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
 	    </ContentPage.Padding>
 	    <StackLayout>
-	        <Label Text="Blue" FontSize="Medium" HorizontalOptions="Center" />
-	        <BoxView Color="Blue" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+	        <Label Text="Blue" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" />
+
+			<Grid Padding="20">
+			  <Label Text="Ad-Soyad" Grid.Column="0" Grid.Row="0"></Label>
+		      <Entry Grid.Column="1" Grid.Row="0"></Entry>
+
+			  <Label Text="Doğum Tarihi" Grid.Column="0" Grid.Row="1"></Label>
+			  <DatePicker Grid.Column="1" Grid.Row="1" Format="dd.MM.yyyy"></DatePicker>
+
+			  <Label Text="Meslek" Grid.Column="0" Grid.Row="2"></Label>
+			  <Picker Grid.Column="1" Grid.Row="2">
+			  	<Picker.Items>
+		            <x:String>Avukat</x:String>
+		            <x:String>Diş Hekimi</x:String> 
+		            <x:String>Doktor</x:String> 
+		            <x:String>Mühendis</x:String> 
+		            <x:String>Serbest</x:String>
+		        </Picker.Items>
+		      </Picker>
+
+			  <Label Text="Cinsiyet" Grid.Column="0" Grid.Row="3"></Label>
+			  <Picker Grid.Column="1" Grid.Row="3">
+			  	<Picker.Items>
+		            <x:String>Erkek</x:String>
+		            <x:String>Kadın</x:String> 
+		        </Picker.Items>
+		      </Picker>
+
+			  <Label Text="Aktif mi?" Grid.Column="0" Grid.Row="4"></Label>
+			  <Switch IsToggled="true" Grid.Column="1" Grid.Row="4"></Switch>
+
+			</Grid>
+			
+	        <BoxView Color="Blue" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" />
 	    </StackLayout>
 	</ContentPage>
 	<ContentPage>
@@ -25,8 +88,39 @@
 	        <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
 	    </ContentPage.Padding>
 	    <StackLayout>
-	        <Label Text="Yellow" FontSize="Medium" HorizontalOptions="Center" />
-	        <BoxView Color="Yellow" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+	        <Label Text="Yellow" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" />
+
+			<Grid Padding="20">
+			  <Label Text="Ad-Soyad" Grid.Column="0" Grid.Row="0"></Label>
+		      <Entry Grid.Column="1" Grid.Row="0"></Entry>
+
+			  <Label Text="Doğum Tarihi" Grid.Column="0" Grid.Row="1"></Label>
+			  <DatePicker Grid.Column="1" Grid.Row="1" Format="dd.MM.yyyy"></DatePicker>
+
+			  <Label Text="Meslek" Grid.Column="0" Grid.Row="2"></Label>
+			  <Picker Grid.Column="1" Grid.Row="2">
+			  	<Picker.Items>
+		            <x:String>Avukat</x:String>
+		            <x:String>Diş Hekimi</x:String> 
+		            <x:String>Doktor</x:String> 
+		            <x:String>Mühendis</x:String> 
+		            <x:String>Serbest</x:String>
+		        </Picker.Items>
+		      </Picker>
+			  <Label Text="Cinsiyet" Grid.Column="0" Grid.Row="3"></Label>
+			  <Picker Grid.Column="1" Grid.Row="3">
+			  	<Picker.Items>
+		            <x:String>Erkek</x:String>
+		            <x:String>Kadın</x:String> 
+		        </Picker.Items>
+		      </Picker>
+
+			  <Label Text="Aktif mi?" Grid.Column="0" Grid.Row="4"></Label>
+			  <Switch IsToggled="true" Grid.Column="1" Grid.Row="4"></Switch>
+
+			</Grid>
+			
+	        <BoxView Color="Yellow" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" />
 	    </StackLayout>
 	</ContentPage>
 </CarouselPage>
