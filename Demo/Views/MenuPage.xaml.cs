@@ -38,12 +38,6 @@ namespace Demo
 			});
 			masterPageItems.Add(new MasterPageItem
 			{
-				Title = "Chart",
-				IconSource = "contacts.png",
-				GetPage = () => new MyChartPage()
-			});
-			masterPageItems.Add(new MasterPageItem
-			{
 				Title = "Carousel",
 				IconSource = "contacts.png",
 				GetPage = () => new MyCarouselPage()

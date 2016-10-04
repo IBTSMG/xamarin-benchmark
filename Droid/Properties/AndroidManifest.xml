@@ -1,6 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.ibtech.demo.demo">
 	<uses-sdk android:minSdkVersion="15" />
+	<application android:label="Demo">
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAPlCtURM5a4EZsvH5Vwz-PHtNn9RTtdcs" />
+	</application>
+	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -8,7 +12,4 @@
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-	<application android:label="Demo">
-		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBYbIfCQUp8isXU7lsYiBtbca0_OA_-ChM" />
-	</application>
 </manifest>

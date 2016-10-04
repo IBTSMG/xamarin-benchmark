@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Telerik.XamarinForms.Chart;
+//using Telerik.XamarinForms.Chart;
 
 using Xamarin.Forms;
 
@@ -12,11 +12,11 @@ namespace Demo
 		{
 			InitializeComponent();
 
-			this.BindingContext = new ChartViewModel();
-			this.Content = CreateChart();
+			/*this.BindingContext = new ChartViewModel();
+			this.Content = CreateChart();*/
 		}
 
-		private static RadCartesianChart CreateChart()
+		/*private static RadCartesianChart CreateChart()
 		{
 			var chart = new RadCartesianChart
 			{
@@ -46,6 +46,6 @@ namespace Demo
 			};
 
 			return series;
-		}
+		}*/
 	}
 }
